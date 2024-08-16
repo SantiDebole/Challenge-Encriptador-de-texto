@@ -1,0 +1,455 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #007bff, #663399);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body {
+    background: linear-gradient(to bottom, #007bff, #663399); 
+    width: 100%; 
+    height: 100%; 
+    background-size: cover; 
+}
+
+
+
+.logo {
+    padding-top: 15px;
+    margin-left: 10px;
+    width: 8%;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.text-area-input, .text-area-output {
+    border: none;  
+    border-radius: 24px;
+    color: #0A3871;
+    padding: 20px;
+    outline: none; 
+}
+
+.text-area-input {
+    margin-top: 90px;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area-output {
+    background: white;
+    background-image: url(img/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    background-size: 75%;
+    width: 400px;
+    height: 80%;
+    margin-top: 75px;
+    position: relative;
+}
+
+.btn-copiar {
+    background: white;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.botones {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn-encriptar, .btn-desencriptar {
+    border-radius: 24px;
+    cursor: pointer;
+    width: 328px;
+    height: 67px;
+    border: 1px solid #0A3871;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    color: white;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    color: #0A3871;
+    margin-left: 30px;
+}
+
+.aclaracion {
+    color: #000000;
+    font-size: 18px;
+}
+
+aside {
+    height: 802px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.error-message {
+    text-align: center;
+    color: #0A3871;
+    font-size: 20px;
+    margin-top: 20px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: white;
+}
+
+.error-message h1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    background-color: white;
+}
+
+.error-message p {
+    font-weight: normal;
+    font-size: 16px;
+    background-color: white;
+}
+
+footer{
+    display: flex;
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #007bff, #663399);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .logo {
+        width: 15%; 
+        margin-left: 10px;
+        padding-top: 15px;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh; 
+        background: inherit; 
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        position: static;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .text-area-input {
+        border-radius: 24px;
+        color: #0A3871;
+        margin-top: 90px;
+        padding: 20px;
+        background-color: transparent;
+    }
+
+    .text-area-output {
+        background: white;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        padding: 20px;
+        width: 650px;
+        height: 200px;
+        margin-bottom: 105px;
+        position: relative;
+    }
+
+    .btn-copiar {
+        background: white;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        cursor: pointer;
+        width: 650px; 
+        height: 50px; 
+        position: absolute;
+        bottom: 450px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        min-height: 40%; 
+    }
+    
+    .error-message {
+        text-align: center;
+        color: #0A3871; 
+        font-size: 20px; 
+        margin-top: 20px; 
+        position: absolute; 
+        top: 20%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: auto; 
+        background-color: white;
+    } 
+    
+    .error-message h1 {
+        font-weight: bold; 
+        font-size: 24px; 
+        color: #000; 
+        background-color: white;
+    }
+    
+    .error-message p {
+        font-weight: normal; 
+        font-size: 16px; 
+        background-color: white;
+    }
+
+    .aclaracion{
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 599px) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, #007bff, #663399);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+        background: inherit;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .text-area-input {
+        border-radius: 24px;
+        color: #0A3871;
+        margin-top: 50px;
+        padding: 15px;
+        width: 90%; 
+        font-size: 24px; 
+        background-color: transparent;
+    }
+
+    .text-area-output {
+        background: white;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        color: #0A3871;
+        padding: 15px;
+        width: 90%; 
+        height: 200px; 
+        margin-top: 20px;
+        background-repeat: no-repeat;
+        background-position: 50% 10%;
+        background-size: 50%; 
+        position: relative;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        min-height: auto; 
+    }
+
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        position: static;
+    }
+
+
+    .error-message {
+        text-align: center;
+        color: #0A3871; 
+        font-size: 18px; 
+        margin-top: 20px; 
+        width: auto; 
+        background-color: white;
+        top: 13%; 
+        left: 50%; 
+    } 
+    
+    .error-message h1 {
+        font-weight: bold; 
+        font-size: 20px; 
+        color: #000; 
+        background-color: white;
+    }
+    
+    .error-message p {
+        font-weight: normal; 
+        font-size: 14px; 
+        background-color: white;
+    }
+
+    .logo {
+        width: 25%; 
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-copiar {
+        background: white;
+        color: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        cursor: pointer;
+        width: 90%; 
+        height: 50px; 
+        position: absolute;
+        bottom: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+    .btn-encriptar {
+        background: #0A3871;
+        color: white;
+        border-radius: 32px;
+        cursor: pointer;
+        height: 50px; 
+        border: 1px solid #0A3871;
+        margin-bottom: 10px; 
+        font-size: 24px;
+    }
+
+    .btn-desencriptar {
+        background: #D8DFE8;
+        color: #0A3871;
+        border-radius: 32px;
+        cursor: pointer;
+        width: 100%; 
+        height: 50px;
+        border: 1px solid #0A3871;
+        margin-bottom: 10px; 
+        margin-left: 0;
+        font-size: 24px;
+    }
+}
+
+
+
+
